@@ -1,0 +1,23 @@
+ALGORITHM length_string
+VAR
+    sentence:STRING;
+    char:INTEGER:=0;
+    word:INTEGER:=0;
+    voy:INTEGER:=0;
+    
+    
+
+BEGIN
+ Read(sentence)
+FOR i FROM 0 TO length.sentence STEP 1  DO
+    IF (sentence[i] !=' ') THEN
+        char:=char + 1
+        IF (sentence[i]:=' ') THEN
+            word:= word + 1 + 1
+            IF (sentence[i]:= 'A','a','E','e','U','u','O','o','I','i') 
+                voy:=voy+1
+            END_IF
+        END_IF
+    END_IF
+  Write(sentence)
+END
